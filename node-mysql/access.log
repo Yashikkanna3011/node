@@ -1,0 +1,8 @@
+::ffff:119.82.108.14 - - [07/Mar/2024:09:59:13 +0000] "GET /employees HTTP/1.1" 200 276 "-" "PostmanRuntime/7.36.3"
+::ffff:119.82.108.14 - - [07/Mar/2024:09:59:25 +0000] "POST /employees HTTP/1.1" 500 21 "-" "PostmanRuntime/7.36.3"
+::ffff:119.82.108.14 - - [07/Mar/2024:09:59:35 +0000] "PUT /employees HTTP/1.1" 404 148 "-" "PostmanRuntime/7.36.3"
+::ffff:119.82.108.14 - - [07/Mar/2024:09:59:41 +0000] "PUT /employees/3 HTTP/1.1" 500 21 "-" "PostmanRuntime/7.36.3"
+::ffff:119.82.108.14 - - [07/Mar/2024:09:59:48 +0000] "DELETE /employees/3 HTTP/1.1" 200 16 "-" "PostmanRuntime/7.36.3"
+::ffff:119.82.108.14 - - [07/Mar/2024:10:16:11 +0000] "POST /employees/ HTTP/1.1" 500 21 "-" "PostmanRuntime/7.36.3"
+::ffff:119.82.108.14 - - [07/Mar/2024:10:20:17 +0000] "GET /employees/ HTTP/1.1" 200 205 "-" "PostmanRuntime/7.36.3"
+::ffff:119.82.108.14 - - [07/Mar/2024:10:20:37 +0000] "DELETE /employees/4 HTTP/1.1" 200 16 "-" "PostmanRuntime/7.36.3"
