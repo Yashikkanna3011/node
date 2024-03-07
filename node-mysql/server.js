@@ -4,6 +4,25 @@ const mysql = require('mysql2');
 const morgan = require('morgan');
 const fs = require('fs');
 const path = require('path');
+const winston = require('winston');
+const util = require('util');
+
+// Create a Winston logger for Node.js
+const nodeLogger = winston.createLogger({
+  transports: [
+    new winston.transports.Console(),
+    new winston.transports.File({ filename: 'node.log' })
+  ]
+});
+
+// Create a Winston logger for MySQL
+const mysqlLogger = winston.createLogger({
+  transports: [
+    new winston.transports.Console(),
+    new winston.transports.File({ filename: 'mysql.log' })
+  ]
+});
+
 
 // Create a connection to the MySQL database
 const db = mysql.createConnection({
@@ -99,7 +118,7 @@ app.delete('/employees/:id', (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
